@@ -5,10 +5,6 @@ variable "statuscake_api_token" {
   sensitive   = true
 }
 
-variable "alert_emails" {
-  description = "List of email addresses for alerts"
-  type        = list(string)
-}
 
 variable "website_name" {
   description = "Name of the website to monitor"
