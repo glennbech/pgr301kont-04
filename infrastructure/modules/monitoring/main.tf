@@ -32,5 +32,5 @@ resource "statuscake_uptime_check" "monitoring" {
   }
 
   contact_groups = [statuscake_contact_group.alert_group.id]
-  tags          = var.monitoring_tags
+  tags           = var.monitoring_tags
 }

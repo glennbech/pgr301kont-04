@@ -36,7 +36,7 @@ resource "statuscake_uptime_check" "website" {
   }
 
   contact_groups = [statuscake_contact_group.monitoring_group.id]
-  tags          = var.monitoring_tags
+  tags           = var.monitoring_tags
 }
 
 module "prod_monitoring" {
@@ -44,10 +44,10 @@ module "prod_monitoring" {
 
   contact_group_name = "Production Alerts"
   alert_emails       = ["tobbekrs@gmail.com"]
-  name_prefix       = "prod"
-  website_name      = "main-site"
-  website_url       = "https://vg.no"
-  monitoring_tags   = ["production", "main"]
+  name_prefix        = "prod"
+  website_name       = "main-site"
+  website_url        = "https://vg.no"
+  monitoring_tags    = ["production", "main"]
 }
 
 module "dev_monitoring" {
@@ -55,9 +55,9 @@ module "dev_monitoring" {
 
   contact_group_name = "Development Alerts"
   alert_emails       = ["tobbekrs@gmail.com"]
-  name_prefix       = "dev"
-  website_name      = "dev-site"
-  website_url       = "https://vg.no"
-  check_interval    = 600  
-  monitoring_tags   = ["development"]
+  name_prefix        = "dev"
+  website_name       = "dev-site"
+  website_url        = "https://vg.no"
+  check_interval     = 600
+  monitoring_tags    = ["development"]
 }
