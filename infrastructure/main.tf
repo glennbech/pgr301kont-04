@@ -32,4 +32,4 @@ module "dev_monitoring" {
   website_url        = "https://vg.no"
   check_interval     = 600
   monitoring_tags    = ["development"]
-}
+} 
