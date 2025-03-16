@@ -30,6 +30,6 @@ module "dev_monitoring" {
   name_prefix        = "dev"
   website_name       = "dev-site"
   website_url        = "https://vg.no"
-  check_interval     = 600
+  check_interval     = 60
   monitoring_tags    = ["development"]
 } 
